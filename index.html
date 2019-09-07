@@ -25,10 +25,30 @@
 
   <!-- Custom styles for this template -->
   <link href="css/new-age.min.css" rel="stylesheet">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147362663-1"></script>
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-147362663-1');
+  </script>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PW8J4FQ');</script>
+  <!-- End Google Tag Manager -->
 
 </head>
 
 <body id="page-top">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PW8J4FQ"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
@@ -60,16 +80,16 @@
         <div class="col-lg-7 my-auto">
           <div class="header-content mx-auto">
             <h1 class="mb-5">Share love coupons with friends and loved once, digitally, far away, on a new level!</h1>
-            <a href="#download" class="btn btn-outline btn-xl js-scroll-trigger">Send coupon now!</a>
+            <a href="#download" onclick="gtag('event', 'send_now_button');" class="btn btn-outline btn-xl js-scroll-trigger">Send coupon now!</a>
           </div>
         </div>
         <div class="col-lg-5 my-auto">
           <div class="device-container">
             <div class="device-mockup iphone6_plus portrait white">
               <div class="device">
-                <div class="screen">
+                <div class="screen" style="margin-top: -20px">
                   <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                  <img src="img/demo-screen-2.png" class="img-fluid" alt="">
+                  <img src="img/Lovepons.gif" class="img-fluid" alt="">
                 </div>
                 <div class="button">
                   <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -89,8 +109,8 @@
             <h2 class="section-heading">In 3 clicks from <span>friends</span>!</h2>
           <p>Our app is available on any mobile device! Download now to get started!</p>
           <div class="badges">
-            <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
-            <a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a>
+            <a class="badge-link" href="#" onClick="gtag('event', 'download_android');" id="download_android"><img src="img/google-play-badge.svg" alt=""></a>
+            <a class="badge-link" href="#" onClick="gtag('event', 'download_ios');" id="download_ios"><img src="img/app-store-badge.svg" alt=""></a>
           </div>
         </div>
       </div>
@@ -109,9 +129,9 @@
           <div class="device-container">
             <div class="device-mockup iphone6_plus portrait white">
               <div class="device">
-                <div class="screen">
+                <div class="screen" style="margin-top: -20px">
                   <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                  <img src="img/demo-screen-2.png" class="img-fluid" alt="">
+                  <img src="img/Home.png" class="img-fluid" id="phone_2" alt="">
                 </div>
                 <div class="button">
                   <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -123,14 +143,14 @@
         <div class="col-lg-8 my-auto">
           <div class="container-fluid">
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-6" id="connect_people">
                 <div class="feature-item">
                   <i class="icon-screen-smartphone text-primary"></i>
                   <h3>Connecting people</h3>
                   <p class="text-muted">Send coupons to anyone, watch progress and discuss.</p>
                 </div>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-6" id="draw_coupon">
                 <div class="feature-item">
                   <i class="icon-pencil text-primary"></i>
                   <h3>Draw coupons yourself</h3>
@@ -139,29 +159,29 @@
               </div>
             </div>
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-6" id="no_ad">
                 <div class="feature-item">
                   <i class="icon-present text-primary"></i>
                   <h3>Free as in Freedom</h3>
-                  <p class="text-muted">You'll never see an ad in our application</p>
+                  <p class="text-muted">You'll never see an ad in our application ;)</p>
                 </div>
               </div>
               <div class="col-lg-6">
-                <div class="feature-item">
+                <div class="feature-item" id="ready_to_send">
                   <i class="icon-book-open text-primary"></i>
                   <h3>Ready to send</h3>
                   <p class="text-muted">Don't want to draw or have no idea? Use our daily updated ready-to-send coupons!</p>
                 </div>
               </div>
             </div><div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-6" id="free_coffee">
                 <div class="feature-item">
                   <i class="icon-diamond text-primary"></i>
-                  <h3>Decentralized</h3>
-                  <p class="text-muted">You can collect, receive and send our cryptocurrency right from app</p>
+                  <h3>Receive bonuses</h3>
+                  <p class="text-muted">Get free coffee from you local shop and more!</p>
                 </div>
               </div>
-              <div class="col-lg-6">
+              <div class="col-lg-6" id="online_stuff">
                 <div class="feature-item">
                   <i class="icon-chemistry text-primary"></i>
                   <h3>Things you can't do offline</h3>
@@ -236,6 +256,60 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/new-age.min.js"></script>
+  <script type="application/javascript">
+    let items = [
+      document.getElementById("connect_people"),
+      document.getElementById("draw_coupon"),
+      document.getElementById("no_ad"),
+      document.getElementById("ready_to_send"),
+      document.getElementById("free_coffee"),
+      document.getElementById("online_stuff")
+    ];
+    document.getElementById("connect_people").onmouseover = function(event) {
+      items.forEach(function(item) {
+        item.style.backgroundColor ="#FFFFFF"
+      })
+      document.getElementById("connect_people").style.backgroundColor = "#9E9E9E"
+      document.getElementById("phone_2").src = "./img/lovepons_social.gif"
+    };
+    document.getElementById("draw_coupon").onmouseover = function(event) {
+      items.forEach(function(item) {
+        item.style.backgroundColor ="#FFFFFF"
+      })
+      document.getElementById("draw_coupon").style.backgroundColor = "#9E9E9E"
+      document.getElementById("phone_2").src = "./img/Lovepons.gif"
+    };
+    document.getElementById("no_ad").onmouseover = function(event) {
+      items.forEach(function(item) {
+        item.style.backgroundColor ="#FFFFFF"
+      })
+      document.getElementById("no_ad").style.backgroundColor = "#9E9E9E"
+      document.getElementById("phone_2").src = "./img/lovepons_social.gif"
+    };
+    document.getElementById("ready_to_send").onmouseover = function(event) {
+      items.forEach(function(item) {
+        item.style.backgroundColor ="#FFFFFF"
+      })
+      document.getElementById("ready_to_send").style.backgroundColor = "#9E9E9E"
+      document.getElementById("phone_2").src = "./img/Home.png"
+    };
+    document.getElementById("free_coffee").onmouseover = function(event) {
+      items.forEach(function(item) {
+        item.style.backgroundColor ="#FFFFFF"
+      })
+      document.getElementById("free_coffee").style.backgroundColor = "#9E9E9E"
+      document.getElementById("phone_2").src = "./img/starbucks.png"
+    };
+    document.getElementById("online_stuff").onmouseover = function(event) {
+      items.forEach(function(item) {
+        item.style.backgroundColor ="#FFFFFF"
+      })
+      document.getElementById("online_stuff").style.backgroundColor = "#9E9E9E"
+      document.getElementById("phone_2").src = "./img/starbucks.png"
+    };
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+
 
 </body>
 
